@@ -1,0 +1,474 @@
+body{
+  margin: 0px 0px;
+  background-color: white;
+
+}
+.navbar{
+   background-color: #bd4c8c;
+   background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+   font-family: arial !important;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+
+  .nav-link{
+    display: inline-block;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: arial;
+    text-decoration: none;
+}
+
+  .nav-link:hover {opacity: 0.5;}
+.nav-link:active{color: pink;}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  top: 20px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+
+
+@keyframes flow {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+#top{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#web-developer{
+  background-color: white;
+  font-size: 8vw;
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, purple, pink, white, lightblue);
+  background-size: 300%;
+  -webkit-background-clip: text;
+        -background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about{
+  background-color: #bd4c8c;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  color: white;
+  width: 80%;
+  margin: 0px 10vw 200px 10vw;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5%;
+  position: relative;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  animation-name: example;
+  overflow: hidden;
+
+
+}
+
+@keyframes example {
+ from {left: -200px;}
+ to {left: 0px;}
+}
+
+.about-me{
+  font-size: 1.5vw;
+  padding: 0 2vw 0 5vw;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.menu{
+  width: 100%;
+  margin-top: 20px;
+  background-color: #bd4c8c;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.fa{
+  font-size: 200px;
+}
+
+.btn {
+  text-decoration: none; /* Remove borders */
+  background: inherit;
+  color: white; /* White text */
+  padding: 10px 100px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+#social{
+    color: #bd4c8c;
+  font-size: 15px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+#social .fa{
+  font-size: 50px;
+  padding: 10px;
+  color: #bd4c8c;
+}
+#contact{
+  margin-top: 100px;
+  color: #bd4c8c;
+text-align: center;
+  background: white;
+}
+
+
+.row{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row>*
+{
+  padding: 10px;
+  flex: 0 0 32%;
+}
+
+.thumbnail{
+  background-color: white;
+  hight: 100%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.2em;
+  padding: 0.5em;
+}
+.thumbnail img{
+   height: 300px;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .description
+  {
+    flex: 40%;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .description
+  {
+    flex: 100%;
+  }
+   #me {
+    width: 50%;
+  }
+
+}
+
+
+
+.content-section .thumbnail { position: relative; overflow: hidden; cursor: pointer; }
+.content-section .thumbnail * { transition: all .25s; }
+.content-section .thumbnail h4 { font-size: 19px; font-weight: 400; }
+.content-section .thumbnail p { line-height: 24px; }
+.content-section .thumbnail:hover h4, .content-section .thumbnail:hover p { color: #AFAFAF; }
+.content-section .thumbnail:hover img { opacity: 0.25;  }
+.content-section .thumbnail:after { font-family: 'FontAwesome'; content: '\f121'; color: #FFF; font-size: 48px; line-height: 80px; top: 70%; position: absolute; text-align: center; display: inline-block; width: 100%; transition: all .35s; opacity: 0; width: 86px; height: 86px; margin-left: auto; margin-right: auto; left: 0; right: 0; border-radius: 50%; background: transparent; border:3px solid transparent; }
+.content-section .thumbnail:hover:after { top: 25%; opacity: 1; color: #FFFFFF; background: #bd4c8c;; border:3px solid #FFFFFF; }
+.content-section { min-height: 100vh; padding-top: 70px; padding-bottom: 20px; }
+.content-section p.lead { font-family: 'Cardo', serif; font-size: 19px; line-height: 1.35em; margin-bottom: 25px; }
+.content-section p.lead em { font-size: 14px; }
+.content-section p em { font-size: 14px;}
+.content-section p mark em { font-size: inherit;}
+.content-section img.pull-right { border:1px solid #DFDFDF; margin-top: 140px;  }
+
+/* The Modal (background) */
+.description{
+  decoration: none;
+  border: none;
+  background: inherit;
+  font-family: inherit;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#SmartCity{
+  margin:auto;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width:800px;
+  hight: 800px;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none
+  background-color: White;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+.mySlides figure{
+   padding: 4px;
+   margin: auto;
+}
+.mySlides figcaption{
+  background-color: White;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  text-align: center;
+  padding: 2px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+.active-slides{
+  display:block;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: gray;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.EasyB{
+  margin-left: auto;
+   margin-right: auto;
+   width: 50em;
+   font-size: 20px;
+}
+
+
+#contact_page
+{
+  margin: 150px 20vw 100px 20vw;
+  padding: 20px 10px 20px 10px;
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, purple, pink, white, lightblue);
+  background-size: 300%;
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #bd4c8c;
+}
+#contact_page h2
+{
+  font-size: 3vw;
+  margin-top: 10px;
+  font-family: FontAwesome;
+  padding-left: 50%;
+}
+
+#mail_form{
+flex: 3 0 0;
+}
+#name{
+  width: 60%;
+  padding: 8px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+#email{
+  width: 60%;
+  padding: 8px 5px;
+  margin: 8px 0;
+  border-radius: 5%;
+  flex: 2 0 0;
+}
+#message{
+  vertical-align: middle;
+  width: 80%;
+  padding-bottom: 10%;
+  margin: 8px 0;
+}
+#submit{
+color: #bd4c8c;
+padding: 8px 10px;
+margin: 10px 2px 0px 2px;
+text-align: left;
+}
+#reset{
+color: #bd4c8c;
+padding: 8px 10px;
+margin: 10px 2px 0px 0px;
+text-align: left;
+}
+
+#social_list{
+  flex: 1 0 0;
+  color: #bd4c8c;
+  font-size: 15px;
+  padding: 100px 10px 50px 10px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+#social_list .fa{
+  font-size: 50px;
+  padding: 10px;
+  color: #bd4c8c;
+}
